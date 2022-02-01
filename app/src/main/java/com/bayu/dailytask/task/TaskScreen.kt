@@ -123,7 +123,7 @@ fun TaskScreenContent(
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(
-                        text = "No Task added yet!",
+                        text = "No Tasks added yet!",
                         style = MaterialTheme.typography.subtitle1
                     )
                 }
