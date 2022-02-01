@@ -83,7 +83,7 @@ fun TaskForms(
     onDescChange: (String) -> Unit,
     isImportant: Boolean,
     onIsImportantChange: (Boolean) -> Unit,
-    buttonSlots: CompFunType,
+    buttonSlots: @Composable () -> Unit,
 ) {
     Column(
         modifier = Modifier
@@ -118,7 +118,7 @@ fun OutlinedTaskForm(
     text: String,
     onTextChange: (String) -> Unit,
     singleLine: Boolean = false,
-    label: CompFunType,
+    label: @Composable () -> Unit,
 ) {
     OutlinedTextField(
         value = text,
@@ -136,7 +136,7 @@ fun TaskCheckbox(
     taskIsImportant: Boolean,
     setTaskIsImportant: (Boolean) -> Unit,
     modifier: Modifier = Modifier,
-    label: CompFunType,
+    label: @Composable () -> Unit,
 ) {
     Row(
         modifier = modifier
